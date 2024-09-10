@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.off{
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <button onclick="on()">On</button>
+    <button onclick="off()">Off</button>
+    <img src="/Blub/Image/mainbulb.jpg" alt="">
+    <img class="off" src="/Blub/Image/mainbulb2.jpg" alt="">
+</body>
+<script>
+    let btn=document.querySelectorAll('button')
+    let img=document.querySelectorAll('img')
+
+    function on(){
+        img[0].style.display="none"
+        img[1].style.display="block"
+    }
+    function off(){
+        img[0].style.display="block"
+        img[1].style.display="none"
+
+    }
+</script>
+</html>
